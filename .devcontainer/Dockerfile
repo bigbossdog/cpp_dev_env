@@ -1,0 +1,14 @@
+FROM --platform=linux/arm64 ubuntu
+
+RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
+    && apt-get -y install --no-install-recommends \
+        build-essential \
+        cmake \
+        gdb \
+        ninja-build \
+        valgrind \
+        clang \
+        clangd-14
+
+WORKDIR /workarea
+RUN mkdir -p /workarea

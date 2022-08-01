@@ -1,0 +1,4 @@
+{
+    "C_Cpp.intelliSenseEngine": "Disabled",
+    "clangd.path": "/usr/lib/llvm-14/bin/clangd"
+}

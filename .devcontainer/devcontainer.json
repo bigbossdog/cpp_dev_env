@@ -1,0 +1,42 @@
+// For format details, see https://aka.ms/vscode-remote/devcontainer.json or this file's README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.195.0/containers/cpp
+
+// loose inspiration: https://github.com/microsoft/vscode-dev-containers/tree/main/containers/docker-from-docker-compose/.devcontainer
+{
+	"name": "C++",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "dev",
+	// Configure tool-specific properties.
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			// Set *default* container specific settings.json values on container create.
+			"settings": {
+				"http.proxyStrictSSL": false,
+			},
+			
+			// Add the IDs of extensions you want installed when the container is created.
+			"extensions": [
+				"berublan.vscode-log-viewer",
+				"cschlosser.doxdocgen",
+				// "davidanson.vscode-markdownlint",
+				// "eamodio.gitlens",
+				"llvm-vs-code-extensions.vscode-clangd", // for UBSAN etc
+				// "matepek.vscode-catch2-test-adapter",
+				"ms-vscode.cpptools",
+				"ms-vscode.cmake-tools",
+				"ms-python.python",
+				"redhat.vscode-yaml",
+				"twxs.cmake"
+			]
+		}
+	},
+
+	"workspaceFolder": "/workarea"
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "gcc -v",
+}

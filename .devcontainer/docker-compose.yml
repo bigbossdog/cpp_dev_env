@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    cap_add:
+      - SYS_PTRACE
+    security_opt:
+      - seccomp:unconfined
+    volumes:
+      - clangd:/workarea/.cache
+      - vscode-extensions:/root/.vscode-server/extensions
+      - ..:/workarea:cached
+    command: sleep infinity
+
+volumes:
+  clangd:
+  vscode-extensions:
