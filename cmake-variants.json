@@ -1,0 +1,28 @@
+{
+    "buildType": {
+        "default": "Debug",
+        "choices": {
+            "debug": {
+                "short": "Debug",
+                "buildType": "Debug"
+            },
+            "reldeb": {
+                "short": "RelWithDebInfo",
+                "buildType": "RelWithDebInfo"
+            },
+            "asan": {
+                "short": "ASAN",
+                "buildType": "ASAN"
+            },
+            "tsan": {
+                "short": "TSAN",
+                "buildType": "TSAN"
+            },
+            "ubsan": {
+                "short": "UBSAN",
+                "buildType": "UBSAN"
+            }
+        }
+    }
+}
+

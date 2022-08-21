@@ -1,0 +1,10 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "bop", // aribtrary makefile command
+            "type": "shell",
+            "command": "make bop"
+        }
+    ]
+}

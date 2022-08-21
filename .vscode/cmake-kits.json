@@ -1,0 +1,8 @@
+[
+    {
+        "name": "CMake Ninja",
+        "preferredGenerator": {
+            "name": "Ninja"
+        }
+    }
+]

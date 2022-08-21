@@ -4,9 +4,9 @@
 using namespace std;
 
 int main(int, char**) {
-    std::cout << "Hello, world!\n" << std::endl;
-    int y = 2;
-    int x = 2;
-    std::cout << "Hello, again!\n" << endl;
+    std::cout << "Hello, world!\n" << endl;
+    int z[30];
+    int bad = z[31];
+    std::cout << "Ignoring UB!\n" << std::endl;
     return 0;
 }
