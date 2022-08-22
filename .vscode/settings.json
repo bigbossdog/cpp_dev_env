@@ -1,43 +1,10 @@
 {
-    "python.formatting.provider": "black",
-    "python.linting.pylintEnabled": false,
-    "python.linting.flake8Enabled": true,
-    // "python.testing.pytestArgs": [
-
-    // ], ...
-    // "python.defaultInterpreterPath"
-    // "python.testing.pytestEnabled": true,
     "cmake.buildDirectory": "${workspaceFolder}/build/${buildKit}_${buildType}/",
     // let clangd take over all VSC intellisense / highlighting to avoid collision
     "C_Cpp.autocomplete": "Disabled",
     "C_Cpp.formatting": "Disabled",
     "C_Cpp.errorSquiggles": "Disabled",
     "C_Cpp.intelliSenseEngine": "Disabled",
-    // googletest integration extension
-    "testMate.cpp.test.executables": "{build,Build,BUILD,out,Out,OUT}/**/*{test,Test,TEST}*",
-    "testMate.cpp.debug.configTemplate": {
-        "type": "cppvsdbg",
-        "linux": { "type": "cppdbg", "MIMode": "gdb"},
-        "program": "${exec}",
-        "args": "${argsArray}",
-        "cwd": "workspaceFolder",
-        "environment": "${envObjArray}",
-        "miDebuggerPath": "/usr/bin/gdb",
-        "stopAtEntry": false,
-        "externalConsole": false,
-        "setupCommands": [
-            {
-              "description": "Enable pretty-printing for gdb",
-              "text": "-enable-pretty-printing",
-              "ignoreFailures": true
-            },
-            {
-              "description": "ignore SIGPIPE",
-              "text": "handle SIGPIPE nonstopnoprint pass",
-              "ignoreFailures": true
-            }
-          ],    
-    },
     "clangd.path": "/usr/lib/llvm-14/bin/clangd",
     "cmake.loggingLevel": "debug"
 }
