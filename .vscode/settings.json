@@ -38,5 +38,6 @@
             }
           ],    
     },
-    "clangd.path": "/usr/lib/llvm-14/bin/clangd"
+    "clangd.path": "/usr/lib/llvm-14/bin/clangd",
+    "cmake.loggingLevel": "debug"
 }

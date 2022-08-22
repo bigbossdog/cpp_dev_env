@@ -19,10 +19,7 @@
 			"extensions": [
 				"berublan.vscode-log-viewer",
 				"cschlosser.doxdocgen",
-				// "davidanson.vscode-markdownlint",
-				// "eamodio.gitlens",
 				"llvm-vs-code-extensions.vscode-clangd", // for UBSAN etc
-				// "matepek.vscode-catch2-test-adapter",
 				"ms-vscode.cpptools",
 				"ms-vscode.cmake-tools",
 				"ms-python.python",
@@ -33,10 +30,4 @@
 	},
 
 	"workspaceFolder": "/workarea"
-
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
-
-	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "gcc -v",
 }
