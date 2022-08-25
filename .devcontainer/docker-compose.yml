@@ -12,10 +12,11 @@ services:
     volumes:
       - clangd:/workarea/.cache
       - vscode-extensions:/root/.vscode-server/extensions
-      - ..:/workarea:cached
-      - ../grpc:/workarea/grpc
+      - ..:/workarea:cached # should include large grpc curl
+      - usr-bin:/usr/bin
     command: sleep infinity
 
 volumes:
   clangd:
   vscode-extensions:
+  usr-bin:

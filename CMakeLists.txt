@@ -1,10 +1,11 @@
 cmake_minimum_required(VERSION 3.0.0)
 project(bop VERSION 0.1.0)
 
-include(CTest)
+# include(CTest)
 enable_testing()
 
-add_executable(bop main.cpp)
+add_executable(client client.cpp)
+add_executable(server server.cpp)
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
@@ -30,4 +31,4 @@ elseif (${CMAKE_BUILD_TYPE} STREQUAL UBSAN)
     set(CMAKE_EXE_LINKER_FLAGS_UBSAN ${UBSAN_FLAGS})
 endif()
 
-include(CPack)
+# include(CPack)
