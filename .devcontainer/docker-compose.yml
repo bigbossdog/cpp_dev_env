@@ -13,6 +13,7 @@ services:
       - clangd:/workarea/.cache
       - vscode-extensions:/root/.vscode-server/extensions
       - ..:/workarea:cached
+      - ../grpc:/workarea/grpc
     command: sleep infinity
 
 volumes:
